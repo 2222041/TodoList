@@ -1,0 +1,147 @@
+:root {
+  font-size: 16px;
+}
+
+body {
+  width: 100%
+}
+
+h1 {
+  padding: 0.25em 0.5em;
+  /*上下 左右の余白*/
+  color: #494949;
+  /*文字色*/
+  background: transparent;
+  /*背景透明に*/
+  border-left: solid 5px #7db4e6;
+  /*左線*/
+}
+
+main {
+  margin: 0 auto;
+  padding: 30px 30px 50px;
+  box-shadow: 0 0 10px 0 lightgray;
+}
+
+input:focus {
+  border: 1px solid #668ad8;
+  outline: none;
+  box-shadow: 0 0 5px 1px rgba(17, 0, 252, 0.5);
+}
+
+select {
+  margin: 0.5rem 1rem 0.5rem 0;
+}
+
+label {
+  padding: 0.5em;
+  /*文字周りの余白*/
+  color: #516ab6;
+  /*文字色*/
+  font-weight: bold;
+  background: #eaf3ff;
+  /*背景色*/
+  border-bottom: solid 3px #516ab6;
+  /*下線*/
+}
+
+
+
+button#submit {
+  padding: 0.5em 1em;
+  text-decoration: none;
+  background: #668ad8;
+  /*ボタン色*/
+  color: #FFF;
+  font-weight: bold;
+  border-bottom: solid 4px #627295;
+  border-radius: 3px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+
+button#submit:active {
+  /*ボタンを押したとき*/
+  -webkit-transform: translateY(4px);
+  transform: translateY(4px);
+  /*下に動く*/
+  box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+  /*影を小さく*/
+  border-bottom: none;
+}
+
+button#priority,
+button#deadline,
+button#sortdayButton,
+button#sortButton,
+button#deletebutton,
+button#remove,
+button#repair {
+  padding: 0.25em 0.5em;
+  margin-top: 1rem;
+  text-decoration: none;
+  background: #f7f7f7;
+  font-weight: bold;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+  border: 6px solid;
+  border-color: #f7f7f7 #f7f7f7 #f7f7f7 olivedrab;
+  color: olivedrab
+}
+
+button#priority:active,
+button#deadline:active,
+button#sortdayButton:active,
+button#sortButton:active,
+button#remove:active,
+button#repair:active,
+button#deletebutton:active {
+  box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+  transform: translateY(2px);
+}
+
+button#remove,
+button#deletebutton {
+  border-left-color: firebrick;
+  color: firebrick;
+  /*文字色*/
+  ;
+}
+
+button#repair {
+  border-left-color: orange;
+  color: orange;
+  /*文字色*/
+  ;
+}
+
+table {
+  margin-top: 2rem;
+  border: solid 2px lightgray;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  border: solid 1px lightgray;
+  border-collapse: collapse;
+}
+
+th {
+  background-color: beige;
+  padding: 0 0.5rem 0;
+}
+
+th#todoLabel {
+  width: 200px;
+}
+
+th#dateLabel {
+  width: 120px;
+}
+
+td {
+  text-align: center;
+}
+
+td input[type='checkbox'] {
+  margin: 0;
+}
