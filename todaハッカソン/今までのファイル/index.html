@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <title>To-doリスト</title>
+</head>
+<body>
+  <main>
+    <div id="input">
+      <label>やること: <input id="todo"></label><br>
+      優先度: <select>
+        <option>低</option>
+        <option selected>普</option>
+        <option>高</option>
+      </select>
+      <label>期日: <input type="date"></label><br>
+      <button id="submit">登録</button>
+    </div>
+
+    <table>
+      <tr>
+        <th id="todoLabel">やること</th>
+        <th>優先度</th>
+        <th id="dateLabel">期日</th>
+        <th>完了</th>
+      </tr>
+      <tr>
+        <td>item.todo</td>
+        <td>item.priority</td>
+        <td>item.deadline</td>
+        <td>item.done</td>
+      </tr>
+    </table>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
